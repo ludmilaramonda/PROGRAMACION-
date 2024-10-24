@@ -39,8 +39,8 @@ h1 {
 
 /* Estilo para Tribu Roja */
 .equipo1 {
-    background: linear-gradient(145deg, #ff4d4d, #ffcccc);
-    color: white;
+    background-color: #e60000;
+    
 }
 
 .equipo1 h2 {
