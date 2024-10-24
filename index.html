@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intertribus - Puntos</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Registro de puntos de las Intertribus</h1>
+    <div id="app"> 
+        <div class="equipo1">
+            <h2>Tribu Roja</h2>
+            <input type="number" id="Handball-TR" placeholder="Handball">
+            <input type="number" id="Resistencia-TR" placeholder="Resistencia">
+            <input type="number" id="Ajedrez-TR" placeholder="Ajedrez">
+            <button onclick="AgregarPuntos('Tribu Roja')"> Agregar Puntos </button>
+        </div>
+         <div class="equipo2">
+            <h2>Tribu Negra</h2>
+            <input type="number" id="Handball-TN" placeholder="Handball">
+            <input type="number" id="Resistencia-TN" placeholder="Resistencia">
+            <input type="number" id="Ajedrez-TN" placeholder="Ajedrez">
+            <button onclick="AgregarPuntos('Tribu Negra')"> Agregar Puntos </button>
+        </div>
+        <div>
+            <button onclick="MostrarResultados()">Mostrar Resultados</button>
+            <p id="Resultado"></p>
+        </div>
+
+    </div>
+    <script src="puntos.ts"></script>
+    
+</body>
+</html>
