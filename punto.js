@@ -11,7 +11,7 @@ var ResistenciaInputEquipo2 = document.getElementById('Resistencia-TN');
 var HandballInputEquipo2 = document.getElementById('Handball-TN');
 var AjedrezInputEquipo2 = document.getElementById('Ajedrez-TN');
 var ResultadoOutput = document.getElementById('Resultado');
-function agregarPuntos(equipo) {
+function AgregarPuntos(equipo) {
     if (equipo === 'equipo1') {
         equipo1.punto += parseInt(HandballInputEquipo1.value, 10) || 0;
         equipo1.punto += parseInt(ResistenciaInputEquipo1.value, 10) || 0;
@@ -23,7 +23,7 @@ function agregarPuntos(equipo) {
         equipo2.punto += parseInt(AjedrezInputEquipo2.value, 10) || 0;
     }
 }
-function mostrarResultado() {
+function MostrarResultado() {
     var Resultado = '';
     if (equipo1.punto > equipo2.punto) {
         Resultado = 'Equipo 1 es el ganador con' + equipo1.punto + 'puntos';
