@@ -8,6 +8,7 @@ let equipo1: puntos={
 
 let equipo2: puntos={
   punto: 0
+  
 };
 
 
@@ -23,7 +24,7 @@ const AjedrezInputEquipo2 = document.getElementById ('Ajedrez-TN') as HTMLInputE
 
 const ResultadoOutput = document.getElementById('Resultado') as HTMLInputElement;
 
-function AgregarPuntos (equipo: string): void{
+function AgregarPuntos (equipo: string){
 if(equipo === 'equipo1') {
   equipo1.punto += parseInt(HandballInputEquipo1.value, 10) ||0;
   equipo1.punto += parseInt(ResistenciaInputEquipo1.value, 10) ||0;
@@ -37,14 +38,14 @@ else if (equipo === 'equipo2'){
 }
 }
 
-function MostrarResultado(): void{
+function MostrarResultados(){
   let Resultado = '';
   if (equipo1.punto > equipo2.punto){
-    Resultado = 'Equipo 1 es el ganador con' + equipo1.punto + 'puntos';
+    Resultado = 'Tribu Roja es el ganador con' + equipo1.punto + ' puntos';
   } else if   (equipo1.punto < equipo2.punto){
-      Resultado = 'Equipo 2 es el ganador' + equipo2.punto + 'puntos';
+      Resultado = 'Tribu Negra es el ganador con' + equipo2.punto + ' puntos';
   } else{
-      Resultado = 'Ambos equipos estan ematados con' + equipo1.punto + 'puntos';
+      Resultado = 'Ambos equipos estan empatados con' + equipo1.punto + ' puntos';
   }
   ResultadoOutput.innerText= Resultado; 
 }
